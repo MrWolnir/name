@@ -1,0 +1,42 @@
+from tkinter import *
+
+def button_1():
+    k.config(text=a.get()),
+    i.config(text='Приветствую, многоувожаемый')
+window = Tk()
+window.title("Приложение)")
+window.geometry("500x300")
+a = Entry(
+    window,
+    width= 15,
+    bg = "gray",
+    fg = "cyan",
+    font = "consolas"
+)
+a.pack()
+b = Button(
+    window,
+    text = "Введите своё имя",
+    width = 15,
+    height = 2,
+    bg = "white",
+    command = button_1
+)
+b.pack()
+i = Label(
+     window,
+     bg="gray",
+     fg = "cyan",
+     font = "gray",
+ )
+i.pack()
+k = Label(
+     window,
+     bg="gray",
+     fg = "cyan",
+     font = "gray"
+ )
+k.pack()
+
+window.mainloop()
+
